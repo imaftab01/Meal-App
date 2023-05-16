@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search the Meal</title>
+    <link rel="icon" type="image/x-icon" href="food.jpg" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <div class="container">
+      <div class="meal-wrapper">
+        <div class="search-meal">
+          <h4 class="title">Search Your Meal</h4>
+          <!-- <sub>Coding ninjas</sub> -->
+          <blockquote></blockquote>
+          <!-- search meal -->
+          <div class="search-meal-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="Enter an ingredient"
+              id="search-input"
+            />
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <!-- All meal result -->
+        <div class="meal-result">
+          <h2 class="title">Your Search Results:</h2>
+          <div id="meal"></div>
+        </div>
+        <!-- popup meal Item -->
+        <div class="meal-details">
+          <!-- recipe close btn -->
+          <button
+            type="button"
+            class="btn recipe-close-btn"
+            id="recipe-close-btn"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+
+          <!-- meal content -->
+          <div class="meal-details-content"></div>
+        </div>
+      </div>
+      <!-- favourite meal sidebar -->
+      <div id="myFavourite" class="favourite">
+        <span class="menu" onclick="openNav()">&#9776;</span>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <h3>Favourite Meals</h3>
+
+        <div class="fav-wrapper">
+          <div class="fav-card">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
